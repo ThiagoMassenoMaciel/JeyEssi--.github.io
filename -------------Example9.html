@@ -1,0 +1,231 @@
+<script>
+    console.log("Type conversin\n Its you change type of some date (explicit - changed by Your choice)\n");
+
+    console.log(Number("9")  + 5);
+    console.log("----Will display 14 cuz the string 9 you change to become data numer 9 and number's sum 9,5 is 14")
+    console.log("Type coersion\n Its you change type of some date (implicit - changed by Js for not to bug)");
+    console.log("9"+ 5); 
+    console.log('--this "9" + 5  will display 95 string cuz the JavaScript turn on number 5 to become string and concatenate "9" "5"  ')
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log("String to  number\n");
+    let string = "2345"; // texto
+    console.log(`String {${typeof string} ${string}} become {${typeof Number(string)} ${Number(string)} }`)
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log(">How much elements they have ?");
+    console.log("-----Count letters by word-----\n Umbrekable\n");
+    let variable11 = "Unbrekable";
+    console.log(variable11.length);
+    console.log(">How many numbers they have ?");
+    console.log("-----Count digts by -----\n 365");
+    let variable12 = 365;
+    console.log(variable12.length);
+    console.log("this happens cuz .lenght is prototype __photo__ from string and not from number\n and so you must convert number to string for use that prototype");
+    console.log(String(variable12).length)
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log("use functions from proto number \n .toFixed(2 number after decimal point)\n")
+    console.log("number -------",6754.3456);
+    let variable13 = 674.3456 ;
+    console.log(variable13.toFixed(2))
+    console.log(`This function returns string . And if you decide to display just number \n use Conversion String to Number  --> Number("string")`)
+    console.log(Number(variable13.toFixed(2)))
+    console.log("Now i want to switch point . per comma ,")
+    console.log(`replace("what", "for what")`);
+    console.log(`before-> ${typeof variable13} ${variable13} after->`,typeof variable13.toFixed(2).replace(".",","),
+    variable13.toFixed(2).replace(".",","))
+    console.log(`Now let's turn this string (674,35) to number`)
+    console.log(Number(variable13.toFixed(2).replace(".",",")))
+    console.log(`->Displays Not a Number cuz comma , doesn't makes a part of chars into the object numbers\n>Comma is a part of string ("PEdaço de texto e n de número")`);
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log("--------Use Upper/Lower-case()\n");
+    console.log("Awesome's code.");
+    let variable14_to_upper = "Awesome's code."
+    let variable15_to_lower = "AWESOME'S CODE."
+
+    console.log(`Up ${variable14_to_upper.toUpperCase()}`)
+    console.log(`Low ${variable15_to_lower.toLowerCase()}`)
+    console.log("|");
+
+    console.log("Separete the phrase string by spaces empty and put parts on diferents position into the array\n")
+    console.log(`.split(" ")`);
+    console.log("Phrase: I wanna to feel love")
+    let phrase = "I wanna to feel love";
+    array = phrase.split("");
+    console.log(`-----`,array);
+    myArray = phrase.split(" ");
+    console.log(`-----`,myArray);
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    //-----------------Manipulate  Arrays-------------------------------------
+    console.log(`now we're gonna to replace spaces " " per \nunderscore _  and array to string again\n` );
+    console.log(' .join("beetween each element from array")');
+    console.log(`a to s :`);
+    let Again = myArray.join("_");
+    console.log(Again);
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log('Find especific word on a phrase \n .include("word")\n');
+    let text = `In this text, we'll talk about the verb to think in Portuguese. That's your first step to get to know how to express your opinion in Brazilian Portuguese. After reading this article, you'll be ready to listen to our podcast episode, in which you'll find a dialog, many examples, and 16 alternative expressions. Keep in mind, though, that the most common way of translating to think in Portuguese is “pensar”. It can also be translated as “achar” when you're not sure about something or you haven't put much thought into that`;
+    console.log('There`s some word "think" into that phrase ? ');
+    console.log(text.includes("think"));
+
+    console.log("|");
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log('Ways to create arrays\n11-  just Square Brackets [] \n12- Variable\n13- constructor\n21- Just Lenght  \n.Array("element¹", "element²" , "element³")\n\n\n\n');
+    console.log(`Array¹¹- (${ ["a",123,"bc"]})`);
+    let arrayy = ["Cadeira",34.2,"dc"];
+    console.log(`Array¹²-- `, arrayy);
+    let arrayyy = new Array("element¹", "element²" , "element³");
+    console.log(`Array¹³--- `, arrayyy);
+    let arrayyyy = new Array(13);
+    console.log(`Array²¹---- `, arrayyyy);
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log("how much elements have some array ? or  h m digits have the index [2] from array ?")
+    console.log(`have `, ["Thiago","Masseno", "Maciel"].length ,` elements`)
+    let ARRAy = ["Thiago","Masseno", "Maciel"]
+    console.log(`index[1] have `, ARRAy[2], `Count :` ,ARRAy[2].length, 'letters');
+    console.log("---");
+    console.log( `Other array `,
+    [
+                    "element¹"                                                      ,
+                    23.67                                                           ,
+                    23                                                              ,
+                    false                                                           ,
+                    function (){   console.log("I just wanna say . Hi hellow");  }  ,
+                    function(){ return `Come over here`}                            ,
+                    {type: "array"}                                                 ,
+                    [1,2,3,4,5,6,7,8,9,10]
+    ].length, `of lenght` 
+                )
+
+                console.log( `Same array \nElement [5]\n\n`,
+    [
+                    "element¹"                                                      ,
+                    23.67                                                           ,
+                    23                                                              ,
+                    false                                                           ,
+                    function (){   console.log("I just wanna say . Hi hellow");  }  ,
+                    function(){ return `Come over here`}                            ,
+                    {type: "array"}                                                 ,
+                    [1,2,3,4,5,6,7,8,9,10]
+    ][5]
+              ,"\n\n"  )
+
+                console.log( `Same array \nElement [5]\nrun execute function by this element from that array\n\n`,
+    [
+                    "element¹"                                                      ,
+                    23.67                                                           ,
+                    23                                                              ,
+                    false                                                           ,
+                    function (){   console.log("I just wanna say . Hi hellow");  }  ,
+                    function(){ return `Come over here`}                            ,
+                    {type: "array"}                                                 ,
+                    [1,2,3,4,5,6,7,8,9,10]
+    ][5]()
+    ,"\n"    )
+
+    console.log( `Same array \nAcess property from the Element [6] it is a Object\n`,
+    [              "element¹"                                                      ,
+                    23.67                                                           ,
+                    23                                                              ,
+                    false                                                           ,
+                    function (){   console.log("I just wanna say . Hi hellow");  }  ,
+                    function(){ return `Come over here`}                            ,
+                    {type: "array"}                                                 ,
+                    [1,2,3,4,5,6,7,8,9,10]
+    ][6]
+    ,"\n\nrun object\n\n\n\n" , 
+        
+    [              "element¹"                                                      ,
+                    23.67                                                           ,
+                    23                                                              ,
+                    false                                                           ,
+                    function (){   console.log("I just wanna say . Hi hellow");  }  ,
+                    function(){ return `Come over here`}                            ,
+                    {type: "array"}                                                 ,
+                    [1,2,3,4,5,6,7,8,9,10]
+    ][6].type
+    ,
+    "\n\n"    )
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log(`Make the word "Words" to become each letter new element on a array\n\nArray.from(variable that contains word)\nOr you can use too .split("") \n\n\n`)
+    let word = "Words"
+    console.log(Array.from(word))
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+    console.log("Add a new item to the end of array")
+
+    let techs = ["html", "css", "JavaScript"]
+/*
+    techs.push("Nodejs")
+
+    console.log("Add a new item to the beguin of array")
+
+    techs.unshift("sql")
+
+    console.log("delete a item to the end of array")
+
+    techs.pop()
+
+    console.log("Remove a item to the end of array")
+
+    techs.shift()
+
+    console.log("Get some elements from the array")
+    
+    console.log(` comece = 1 parametro  termine = 2 paramentro\n\n .slice( [x , y[ )   `,techs.slice(0,1))
+
+    console.log("Remove x items from the array by position index")
+
+    console.log(` comece = 1 parametro  Quantas vezes = 2 paramentro\n\n .splice( [x , y[ )   `,techs.splice(0,2))
+*/
+    console.log("Find what is the position index of especific item ?")
+
+    let i = techs.indexOf("css");
+    let ii= techs.indexOf("JavaScript");
+
+    console.log(`Position to the element css `,i , `\n\n to the element JavaScript `, ii)
+    console.log(techs)
+    console.log("Exemplo pratico é fazendo uma lista de alunos com numero de chamada e um deles saiu da escola então todos os outros alunos que na chamada estavam acima dele vão agrora decrescer 1 numero da chamada")
+
+    console.log("|");
+    console.log("|");
+    console.log("|");
+
+  
+  
+
+    
+</script>

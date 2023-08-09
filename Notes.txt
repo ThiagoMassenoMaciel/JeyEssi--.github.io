@@ -1,0 +1,27 @@
+usei a var name e aconteceu deprecited censurado
+
+pelo fato de eu ja ter feito um objeto com o nome thiago case sensitive
+
+I realize inst possible to show index elements obj from the array using the method strings + interpolando with crase `` like ${array[0]}
+
+Not can be displayed elements from any array using template literals + string
+
+You cannt call a function on a line before it have been declared and initialized instead of the function doesn't anonymous
+
+Ontem 30' 
+hoje 33'
+ontem 40'
+antes 36'
+
+explain a way more playfullness  ingredients   its like parameters  and  cake recipe a function 
+        step by step = block statement  
+        final result = returns a cake 
+
+
+All the functions that haven't return , they are undefined 
+
+  hoisting execute run / acess before to declared and initialized
+      variables
+        var 
+      function 
+        not anonymous

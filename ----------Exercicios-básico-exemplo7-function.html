@@ -1,0 +1,377 @@
+<script>
+  //Create one app that alows you to rewhite the same phrase lot of times .
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+
+  console.log("Study is very good!");
+  console.log("Pacient and persistency");
+  console.log("Review it's mother's learning");
+/*
+  in other to make control c and control v  and repeat that Phrase 
+  again and again
+  
+  you must create a function that make's it 
+  for you just write de name of the function and 
+    the function make that a lot of phrases
+
+    Now you just write a name,  not a phrase anymore
+*/
+  function CreatePhrases(){
+    console.log("Study is very good!");
+    console.log("Pacient and persistency");
+    console.log("Review it's mother's learning");
+    console.log("----called by function");
+  }
+
+
+  CreatePhrases()
+  CreatePhrases()
+  CreatePhrases()
+  CreatePhrases()
+  CreatePhrases()
+  
+
+
+
+
+
+  //function express ou anonymous
+  //parameters
+  // not return, use console.lob
+  console.log("🧑🏾‍💻Create function anonymous or express - its like function without a name into a variabel ")
+
+  const variable = function(){
+
+  }
+
+  const sumCalc = function(number1, number2){
+    console.log(number1+number2);
+  }
+  sumCalc(2,5) // 7 
+
+//Return values from the function
+  console.log("Return values from the function sum and display using template literals and template strings");
+  const sum = function(numberone, numbertwo) {
+    return numberone + numbertwo;
+  }
+
+  let numberOne = 250;
+  let numbertwo = 250;
+  
+  console.log(`the number one is ${numberOne}`);
+  console.log(`the number two is ${numbertwo}`);
+  console.log(`the sum of them is ${sum(numberOne,numbertwo)}`);
+
+  console.log("Define kind of literals into the scope of a function");
+  const sub = function (suB, sub){
+   total = suB - sub ;
+    return total ;
+  }
+
+  let nN = 23;
+  let nn = 20;
+  console.log(`result subtraction of ${nN} by ${nn} = ${sub(nN,nn)}  the literal(variable) not defined is ${total}`);
+
+//  this is possible to argument a name withou that special words (let,var,const) like this exemple 
+//  BUT is not a issue , cuz on the future maybe it will display to you a lot of bugs 
+//   define a variable with special words    let , var , const
+
+
+// Explain ludic example   how playful it is    playful way to understand 
+
+
+const blender = function(fruit1, fruit2){
+  return `was made juice of ${fruit1} and ${fruit2}`;
+}
+
+// into the blender we put two fruits diferent 
+// at the end we have a juice of them
+
+//after returned some that values we must put that juice into a glass
+
+const glass = blender(" Maça "," Banana");
+
+console.log(glass);
+
+// function (ingradient1 , ingradient2, ingradient3){
+//  step-by-step;
+//  return the result
+//}
+
+//What will happen if the function didn't have any variable defined at the arguments 
+//--> but into the block statement have a same 
+//variable from the previous block statement   - will update it 
+
+
+  console.log("The function anonymous that updates variable from the previous block statement");
+  {
+    let variable = "Value";
+    console.log(`--Before update : ${variable}`);
+
+    const update_without_args = function (){
+
+      variable = "value";
+      return variable;
+    }
+
+    console.log(`--Call function :
+                                   ${update_without_args(variable)}-------`)
+
+
+    console.log(`--After update : ${variable}`);
+  }
+
+  console.log("::::::::::::Not having a return:::::::::::::::::::::")
+  {
+    let variable = "Value";
+    console.log(`--Before update : ${variable}`);
+    const update_without_args = function (){
+      variable = "value";
+    }
+    
+    console.log(`--Call function :
+                                  ${update_without_args(variable)}-------`);
+
+    console.log(`--After update : ${variable}`);
+  }
+
+
+  console.log("::::::::::::Function hoisting:::::::::::::::::::::")
+
+  {
+    //    ✅Works on a function not on a function anonymous or express 
+
+    DisplayThiago();
+
+    function DisplayThiago(){
+      console.log("Thiago");
+    }
+    /*
+    Uncaught ReferenceError: DIsplayThiago is not defined at ----------Exercicios-básico-exemplo7-function.html:181:5
+    //    🚫Doesn't Works on a function anonymous or express even you use var special variable
+
+    DIsplayThiago();
+    
+    const DIsplaythiago = function(){
+      console.log("Thiago");
+    }
+    */ 
+  }
+
+  // New way to write functions    
+
+  console.log("New way to write functions its functions arrays");
+  const name_variable = ( name) => {
+    return `the name is ${name}-`;
+  }
+
+  let name = `thiago*12`;
+
+  console.log(`Console.log ${name_variable(name)}`);
+
+  {
+    console.log("-----New way to write functions its functions arrays");
+    const name_variable = ( name) => {
+      return `the name is ${name}-`;
+    }
+    console.log(`Console.log ${name_variable(`thiago*12`)}`);
+  }
+
+
+
+
+
+  console.log("---->||||<----");
+  console.log("Assignment per parameters and execute functions");
+  console.log("---->||||<----");
+  console.log(`Assignment String`);
+  console.log("---->||||<----");
+
+  const stringss = (words )=>{
+    return `the words Assignment was ${words}` ;
+  }
+  let variablE = stringss("I choose this prhase for practice the code i love it");
+  console.log(variablE);
+
+//-----------------------------
+
+  console.log("Simple way");
+
+  const funcao = (stringSS) => {
+    console.log(stringSS);
+  }
+
+  funcao("Simplicity is the goal");
+
+  //--------------------------
+
+  console.log("---->||||<----");
+  console.log(`Assignment Number - i use hoisting`);
+  console.log("---->||||<----");
+
+  DisplayYOurAge(23);
+
+  function DisplayYOurAge(age) {
+    console.log(`You are ${age} old years`);
+  }
+//---------------------------
+
+console.log("---->||||<----");
+console.log(`Assignment Number float - i use hoisting`);
+console.log("---->||||<----");
+
+DisplayYOurWeight(67.56);
+
+function DisplayYOurWeight(weight) {
+  console.log(`You are ${weight} pounds`);
+}
+
+//---------------------------
+  
+  console.log("---->||||<----");
+  console.log(`Assignment Boolean`);
+  console.log("---->||||<----");
+
+  console.log("I said i want true . And you are !true")
+  flag(true);
+
+  function flag (Boolean){
+    console.log(!Boolean)
+  }
+
+  
+//==============================
+  
+console.log("---->||||<----");
+console.log(`Assignment Array`);
+console.log("---->||||<----");
+
+console.log("tell me a sequency of days through the week");
+
+Array(["thursday", "Wednesday", "Sunday", "Friday", "Saturday", "Monday"]);
+
+function Array(ar){
+  console.log(ar);
+}
+//===========================
+console.log("---->||||<----");
+console.log(`Assignment Object`);
+console.log("---->||||<----");
+
+console.log("Pick one objet into your house and describe what is your atributes and functions");
+
+Object(
+    { name:"Notebook", 
+      price:2999.00 , 
+      processsor:"Intel core i3 10º", 
+      ssd:"256GB" , 
+      memory: "8GB", 
+      make: ()=>{
+      console.log("helps me to study for my job to software job")
+      }
+    }
+  )
+
+function Object(obj){
+  console.log(obj);
+}
+
+//====================CALL BACK========
+console.log("---->||||<----");
+console.log(`Assignment arg function - Call back`);
+console.log("---->||||<----");
+// you are passing one function as argument into other Function
+
+function MinhaFuncao( functioN){
+  console.log("Before to run call back");
+  //and the function are run it
+  functioN();
+  console.log("After to run call back")
+}
+// Im call to functio1 by passing as arg other function2 . And into function1 execute function2
+MinhaFuncao( ()=>{
+    console.log("At the moment of call back ")
+
+  }
+)
+
+
+/*
+
+function function1(function2){
+  function2()
+}
+
+function1(function2()=>{ } ){
+  
+}
+//---It means like function 1 makes 
+
+function function1(function2){
+  function2(){
+    step1
+    step2
+  }
+}
+
+
+*/
+
+console.log("practice");
+
+//get antecesor and sucessor from some number and display it . Dont forgot the details to make that three steps into the two function with one of them callback
+
+console.log("get antecesor and sucessor from some number and display it . Dont forget the details to make that three steps into the two function with one of them callback");
+
+var array = [];
+
+const funcao1 =(number) => {
+  let ant = number - 1;
+  let suc = number + 1;
+  
+  array = [ant,suc];
+
+  funcao2(array);
+}
+
+function funcao2(number ) {
+  console.log(`Antecessor : ${number[0]} and sucessor : ${number[1]}`);
+}
+
+
+console.log(`testando com o numero : 345 ${funcao1(345)}`);
+
+
+
+
+
+</script>

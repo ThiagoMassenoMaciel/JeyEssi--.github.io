@@ -1,0 +1,88 @@
+<script>
+    //-----------------------------------------Creating a object Passing by parameter
+    console.log("Create obj passing by parameter")
+    // into the braces {}  declared properies and values from the object
+
+    CreateObj({name: "Thiago" , age: 20 , hight: 1.67})
+
+    function CreateObj(obj){
+        console.log(`new object created => ${obj} <=`);
+        console.log(obj);
+    }
+    console.log("||||||||||--------------------||||||||||")
+    //-----------------------------------------Creating a object Passing for a variable 
+    console.log("Create a obj and put it into the variable")
+
+    const variable6 = {
+        property_1: "value1",
+        property_2: "value2",
+        property_3: function Functionality() {
+            console.log("Executting the event / method from object created");
+        }
+    }
+
+    console.log(variable6);
+    console.log("||||||||||--------------------||||||||||")
+
+    //-----------------------------------------Creating a object from some class already declared with new 
+
+    console.log("Create object by new \n Pre-requisites: 1- function already declared \n              2- Use new as assignment for a variable");
+
+    function name_function(){
+        console.log("object created , right now ...");
+    }
+
+    const Variable7 = new name_function();
+    console.log(Variable7);
+    console.log("----------------------------------------")
+    console.log('this code " new name_function()"  returns one obj created with propreries by that function')
+    console.log("||||||||||--------------------||||||||||")
+
+
+
+//-----------------------------------------Adding values into the properties from  a new object from some function already declared new 
+
+    console.log("Add values at the same moment create object");
+
+    function Create_Object_And_Assignments(Parameter_1){
+        this.name = Parameter_1;
+        this.walk = ()=>{
+            console.log(`I'm a method that alows the objct.name ${Parameter_1} to walk`);
+        }
+    }
+        
+    const Variable8 = new Create_Object_And_Assignments("Thiago")
+    console.log("thiago add name  to the new object instead of what i'm instantiating ")
+    console.log(Variable8);
+
+    console.log("example --------practice ----------");
+
+    function Create_Object_And_Assignments(Parameter_1){
+        this.name = Parameter_1;
+        this.walk = ()=>{
+            console.log(`I'm a method that alows the objct.name ${Parameter_1}to be stored`);
+        }
+    }
+        
+    const Estoque_de_Compras = new Create_Object_And_Assignments("cuzcuz")
+    console.log("add  cuzcuz name to the new obj called Estoque_de_Compras" )
+    console.log(Estoque_de_Compras);
+
+console.log("||||||||||--------------------||||||||||")
+
+
+//-----------------------------------------Constructs Functions-------------------------------------------------
+    console.log("Using the function on JS that returns obj with each char  letter become new property: char")
+
+
+    const variable9 = function StringBecomeArrayChar(Strings ){
+        let Variable= new String(Strings)
+        return `object created was - ${Variable}`
+    }
+    // -----------Exemple7.html:83 Uncaught ReferenceError: StringBecomeArrayChar is not defined 
+    // If you are using Function anonyms or express, you must be to call her by  variable()
+    console.log(`Phrase Word become -obj ( ${ variable9("Word") }`);
+
+    console.log("||||||||||--------------------||||||||||")
+
+</script>

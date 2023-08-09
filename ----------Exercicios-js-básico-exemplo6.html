@@ -1,0 +1,132 @@
+<script>
+  //i have to create a variable thats called something in english
+  {
+    let weight = "your name is weight like peso in portuguese language";
+    console.log(typeof weight);
+    {
+      typeof String 
+      {
+        let familia = "varias pessoas ";
+        let EmCasa  = true;
+        let numero = 234;
+        let Numero = `ìsso${familia*23}`;
+
+        console.log(typeof Numero);
+
+        console.log(`- isso quero um texto ${Numero}`);
+      }
+    }
+    
+  }
+
+
+  ///Variable named weight ; 
+
+  let weight; 
+
+  // what kind a of data it is ? 
+
+  console.log( typeof weight);
+
+
+  
+
+  let student , orderList_called , average , OnWork;
+
+  student = "Thiago masseno maciel"
+  orderList_called = "24";
+  average = 23.5;
+  Onwork = true;
+
+  let JuniorClass = {};
+
+  console.log(typeof JuniorClass);
+
+  JuniorClass = { 
+  student : "Thiago masseno maciel",
+  agee: 10,
+  orderList_called : "24",
+  average : 23.5,
+  Onwork : true
+  };
+
+  console.log(JuniorClass);
+
+  // nome de idade
+
+  console.log( `${JuniorClass.student} de idade ${JuniorClass.agee} pesa ${JuniorClass.average} pelos valores de cada objeto`);
+
+  //  You have to create  variable arrray without anything into it
+  let students = [];
+  console.log(`Before you put something into array has lenght - ${students.length}`)
+  // Put it into the array
+  students = [JuniorClass];
+  console.log(`After you put something into the array ${students} has lenght ${students.length}`);
+  console.log(`Referencing by access position index through array  ${students[0]}`);
+
+
+
+
+
+  console.log("-------Wardrobe--------");
+  const guardaRoupa = {
+    name: "wardrobe",
+    collor:"white and gray florestal",
+    weight: 60.6,
+    quantity_of_compartments: 7
+  }
+
+  console.log(`objeto criado - ${guardaRoupa} seu tamanho - ${guardaRoupa.length}`,  );
+  // create array empty
+  let quarto = [];
+  console.log(`array criada ${quarto}  seu tamanho ${quarto.length}`);
+
+  // put into this array the last obj created ;
+  quarto = [guardaRoupa];      
+
+  // show the position zero
+  console.log(`depois de colocar obj dentro da array  seu lenght ${quarto.length} seu primeiro elemento -`);
+
+  // show the potential
+
+  // não exibe além dessa maneira
+  console.log(quarto[0]);
+  console.log(`Interpolando não funciona -`, quarto[0]);
+  // create other object and put them into the same array that you put it time
+  const cama = {
+    name: "bed" ,
+    weight: 40 , 
+    quantity_of_compartments: 3
+  }
+  //subinscribed
+  quarto = [guardaRoupa, cama ];
+
+  console.log(`display two elements from quarto array -`, quarto);
+
+  //what will happen if we run this code below?
+//----------Hosting    for not used variable after it have been declared and initializated
+  console.log(a);
+  var a = 10;
+
+    //what will happen if we run this code below?
+    //-- will hapen one error caught by reference cuz b wasnt declared before it was used
+
+
+    // E se for uma array dentro de uma array como eu posso saber quantos elementos tem o primeiro elemento array ?
+
+
+    let arrayOne = [1,2,3,4,5,6,7];
+
+    let arrayTwo = [2,3,4,5];
+
+    let arrayThree = [6,7,8,9,10,11,12];
+
+    let arrayFour = [23,12,35,64,1]
+    let Array = [arrayOne , arrayTwo , arrayThree , arrayFour];
+
+    console.log(Array[1].length);
+    console.log(Array);
+
+
+
+</script>

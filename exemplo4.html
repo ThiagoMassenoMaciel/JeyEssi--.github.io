@@ -1,0 +1,53 @@
+<script>
+  //-------------------Variavel let somente existe dentro do escopo de onde foi criada e inicializada
+/*
+  console.log(`existe variavel let antes da inicialização e fora do escopo ?  `, variavel_let);   // Não
+*/  
+
+  {
+    let variavel_let = 10;
+    console.log(`existe variavel let dentro do escopo ?`, variavel_let);
+  }
+
+//console.log(`existe variavel let depois da inicialização do escopo ?`, variavel_let);
+
+  // se for inicializada em um scopo externo e
+//              dentro de um sub scopo for atualizada ela ira aparecer no console log
+  let variavel_let;
+  console.log(`--------------------existe variavel let depois de declarada no escopo ?`, variavel_let);
+
+  {
+    let variavel_let = 100;
+    console.log(`-existe variavel let dentro do escopo ?`, variavel_let);
+
+  }
+
+
+// let atualização  
+  console.log("||||||||||||||||||||||||||      ----    variavel let   ----      ||||||||||||||||||||||||||||||");
+
+{
+  let variavel2_let = 0 ;
+  console.log( "Valor depois  do escopo de atualização (estado dentro do scopo Pai -" , variavel2_let);
+  {
+    variavel2_let = 20;
+    console.log("Valor atualizado dentro do sub escopo filho -" , variavel2_let);
+  }
+
+  console.log("Valor depois  do escopo de atualização (estado dentro do scopo Pai -" , variavel2_let);
+}
+
+console.log("||||||||||||||||||||||||||      ----    variavel var   ----      ||||||||||||||||||||||||||||||");
+
+{
+  var variavel3_var = 0 ;
+  console.log( "Valor depois  do escopo de atualização (estado dentro do scopo Pai -" , variavel2_var);
+  {
+    variavel3_var = 20;
+    console.log("Valor atualizado dentro do sub escopo filho -" , variavel3_var);
+  }
+
+  console.log("Valor depois  do escopo de atualização (estado dentro do scopo Pai -" , variavel3_var);
+}
+
+

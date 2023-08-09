@@ -1,0 +1,12 @@
+<script>
+  let variavel = 50 ; // mesmo bloco declarei
+  console.log("Inicializei bloco pai ", variavel);
+
+  {
+    variavel = 105;
+    console.log("Atualizei - bloco filho" , variavel)
+  }
+  console.log("bloco pai", variavel); // mesmo bloco usei
+
+  //Deu certo pois eu usei a variavel let depois de ter inicializada e declarada mesmo bloco
+</script>
