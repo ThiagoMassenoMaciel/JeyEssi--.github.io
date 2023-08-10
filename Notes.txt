@@ -25,3 +25,13 @@ All the functions that haven't return , they are undefined
         var 
       function 
         not anonymous
+
+
+
+Idea of project Using Basics of java script square perfect of 1,2,3,4,5,6,7,8,9,10 digits
+button in nav go to direct section with   href =#div-section 
+
+Idea of project : Build a "app"  for choose at the breakfast for my friend and they the same will choose mine , without us know what was choosed both of as .
+----------USING JUST BOOLEAN AND objects looks like the exercices that i made in line 250 at the file Example10.html
+BOTH USERS initiale have um list to choose the breakfast for your friend and what kind of alergic food it is 
+AFTER they estart to try to gues the response by other HUNGRY ? bellyache ?

@@ -1,0 +1,376 @@
+<script>
+  //Expressions and Operators
+  //Binary
+  //Unary
+  //Ternary
+
+  console.log("Expressions undefined its a line that have some code that solve some problem")
+  console.log("Example¹:\n\nThe problem:  I need to create some variable");
+  let variable16 ;
+  console.log(variable16);
+  console.log(typeof variable16);
+  console.log("\nSolution:  Expression of code undefined ");
+  console.log("Example²:\n\nThe problem:  I need to store one number ")
+
+  // palavras em portugues mesma fonetica significado diferente -  ensinar inglês     one a    portugues um um 
+
+    //function auto executable 
+//---------------------------------for to realy works MUST TO PUT semicolon BEFORE ( function )()
+let numbber = 0 ;
+(
+  function(){
+  console.log("=============-function-auto-executable-====================")
+  console.log("As situações em que o semicolon ; faz diferença é quando há uma função autocomplete no mesmo bloco e logo a baixo de alguma atribuição. Pois o js interpreta que é para juntar a function e a atribuição na mesma variável quando não tem o ponto  vírgula")
+  }
+
+)()
+
+
+  //Expressions and Operators
+  //Unary
+  console.log("Expressions and Operators Unary")
+  console.log("variable = herself + 1  \n variable = herSelf - 1");
+  let binn1= 3, binn2 = 1;
+  console.log(`\n\n ++var(3) = ${++binn1} \n  --var(1) = ${--binn2}`)
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+  //Expressions and Operators
+  //Binary
+  console.log("Expressions and Operators Binary")
+  console.log("variable + some number \n variable + other_variable");
+  let bin1= 3, bin2 = 1;
+  console.log(`\n\n var(3) + 3 = ${bin1 + 3} \n var(3) + var(1) = ${bin1 + bin2}`)
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+    //Expressions and Operators
+  //Ternary
+  console.log("Expressions and Operators Ternary")
+  console.log("If  (something is true ?) make this (  step1 ) else(:) make this ( step2)");
+  console.log("    something is true ?               step1         :    step2");
+  console.log("    binnn1 == true ? exibir-lo : exibir-lo");
+  let binnn1= true, binnn2 = 1;
+  console.log(binnn1 == true ? `-->number 1` : `-->number zero`);
+
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+  
+    //left-hand-Expression
+  // new 
+  // using functions constructorss
+
+  console.log(`Expressions Short hand \nnew \nusing functions constructors\nnew String("") new Number("") `);
+  let name = new String("Thiago Masseno")
+  console.log(`used new string becomes -> ${typeof name} \nit is -> ${name}` , `\nin fact is `, name);
+  let nummber = new Number("365");
+  console.log(`user new number becomes -> ${typeof nummber} \nit is ->${nummber} \n in fact is `, nummber);
+  console.log("two objects created :", name , nummber );
+  console.log("``")
+  console.log(`Using after created NEW ATRIBUTES from type of Object String`)
+  console.log(name.surname = "Maciel" , name)
+  console.log("``")
+  console.log(`OTHER EXPRESSIONS`);
+  console.log(` new Date("AAAA-MM-DD")`);
+  let data = new Date('2023-08-09');
+  console.log(data);
+  console.log("\n acssessing your date's phototype = functions constructors", data.__proto__)
+
+  //Expression terms Unary
+  console.log("------>type of (describe kind a of data )")
+  let numberr = 345;
+
+  console.log(` value :`, numberr , " ->", typeof numberr);
+
+  console.log("------>delete (can delete property from some object )")
+   const objj = {
+    name: "Thiago Masseno",
+    propert2: 29
+  }
+  console.log("Before del",objj);
+  console.log(" using del to remove one property from object")
+  delete objj.propert2;
+  console.log("After del ",objj)
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+
+
+
+  //Calculating Operators
+  /*
+
+  Addition (Finding the Sum; ‘+’)
+  Subtraction (Finding the difference; ‘-’)
+  Multiplication (Finding the product; ‘×’ )
+  Division (Finding the quotient; ‘÷’)
+
+  */
+
+  let variable17 = 34;
+
+  console.log("Calculating Operators => var(34) and 10 ")
+  console.log(`Addition + ${variable17 + 10} `)
+  console.log(`Subtraction - ${variable17 - 10} `)
+  console.log(`Multiplication * ${variable17 * 10} `)
+  console.log(`Division / ${variable17/10} `)
+  console.log("increment before  actual line ++var" , ++variable17)
+  variable17 = variable17-1;  // for to differ sinal --thisWAY  and thisWAY--
+  console.log("increment after  actual line var++" , variable17++)
+  console.log("==>you just will see this next line" , variable17)
+  console.log("DEcrement before  actual line --var" , --variable17)
+  variable17 = variable17+1;
+  console.log("DEcrement after  actual line var--" , variable17--)
+  console.log("==>you just will see this next line" , variable17)
+  console.log("`´")
+  console.log(" Example Exponentiation a^2 = a *a = a ** a \n ON JAVASCRIPT   34 ** 10 =" , variable17**10)
+  console.log("`´")
+  console.log(" Remainder ON JAVASCRIPT  34%10 =" , variable17 % 10)
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+  console.log("Groupping Operator");
+  console.log("// The Java script choose the priorite axiomas in maths\n 1º (* or /) 2º( + or -)\n Example 2 + 3 * 5 ")
+  let total = 2+3*5; 
+  console.log(`Maths priorities = ${total}`)
+  console.log(`My prioritie  (2+3)*5 =  ${(2+3)*5}`)
+
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+  console.log("Compare values beetween OPERATORS and returns boolean t or f\n == igual\n!= different\nJust comparing VALUES")
+  let boolean1 = 23;
+  let boolean2 = -23;
+  console.log(" var(23) != 23 ? ", boolean1 != 23)
+  console.log(" var(-23) == -23? ", boolean2 == -23);
+  console.log(` var(-23) == "-23" `, boolean2 == "-23" ," ---But why: Cuz just values are the same ")
+  console.log(` var(-23) != "-23" `, boolean2 != "-23" ,"---But why: Cuz == doenst mean value and type comparation")
+  console.log("``")
+  console.log("Compare values and type beetween OPERATORS and returns boolean t or f\n === specific the same\n!== especific different\nComparing VALUES and TYPE")
+  console.log(" var(23) !== 23 ? ", boolean1 != 23 )
+  console.log(" var(-23) === -23? ", boolean2 == -23 ,"values and type are the same");
+  console.log(` var(-23) === "-23" `, boolean2 == "-23" ," ---But why: Cuz values and type aren't the same ")
+  console.log(` var(-23) !== "-23" `, boolean2 != "-23" ,"---But why: Cuz === it means value and type comparation")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+  console.log(`Compare values beetween OPERATORS and returns boolean t or f\n
+  > value side left more than side right\n
+  < value side left less than side right\n
+  >= value side left more than {or equal} side right\n
+  <= value side left less than  {or equal} side right\n\n  > < >= <= `)
+
+  let less = 1;
+  let more = 2;
+
+  console.log("2 > 1 :" , more > less)
+  console.log("2 < 1 :" , more < less)
+  console.log("2 >= 2 :" , more >= more)
+  console.log("1 >= 1 :" , less >= less)
+
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+  console.log("|")
+
+
+  console.log("||Assignment");
+  console.log("----||simple \n a = 1");
+  let a = 1;
+  console.log(` R = ${a}`)
+  console.log("----||Addition \n a = a + 1");
+   a += 1 ;
+  console.log(` a +=1 -> ${a}`)
+
+  console.log("----||Subtraction \n a = a - 1");
+  a -= 1 ;
+ console.log(` a -=1 -> ${a}`)
+
+ console.log("----||Multiplication \n a = a * 2");
+ a += 1 ; // return initial value after -1
+ a *=2
+console.log(` a *=2 -> ${a}`)
+
+console.log("----||Division \n a = a/2");
+a /=2
+console.log(` a /=2 -> ${a}`)
+
+console.log("----||Remainder \n a = a%2");
+a %=2
+console.log(` a %=2 -> ${a}`);
+let b = 10;
+b %= 7;
+console.log(` 10 %=7 -> ${b}`)
+
+console.log("----||Exponentiation\na = 2 \na = a**3 = a ^3")
+a = 2;
+a **=3;
+console.log(` a **=3 -> ${a} elevado ao cubo`);
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+
+
+console.log("Compare two booleans and returns boolean\n true? then do : else do \n AND---->&&\n OR---->||\n NOT----> !")
+console.log("At the table i don't know what to eat but , i know what a dont wana to eat")
+console.log("Situation¹ : If i have something to eat i probably will not gotta angry");
+console.log("Situation² : I'll just make a hamburg if there's bread and cheese");
+console.log("Situation³ : I cannot have a brakefast health if there's Peanut butter . Makes me feel bad, i gotta bellyache");
+let bread, cheese, Peanut_butter;
+const brakefast_Situation_one = {
+  bread : true,
+  cheese : true,
+  Peanut_butter:false 
+}
+
+const brakefast_Situation_two = {
+  bread : false,
+  cheese : false,
+  Peanut_butter:false 
+}
+
+const brakefast_Situation_three = {
+  bread : false,
+  cheese : false,
+  Peanut_butter:true 
+}
+console.log("will i gotta angry on Breakfast_One ", 
+  brakefast_Situation_one.Peanut_butter||
+  brakefast_Situation_one.bread||
+  brakefast_Situation_one.cheese)
+
+console.log("will i gotta angry on Breakfast_Two ", 
+  brakefast_Situation_two.Peanut_butter||
+  brakefast_Situation_two.bread||
+  brakefast_Situation_two.cheese)
+
+console.log("will i gotta angry on Breakfast_three ", 
+  brakefast_Situation_three.Peanut_butter||
+  brakefast_Situation_three.bread||
+  brakefast_Situation_three.cheese)
+console.log("Will i not gotta angry and bellyache at Breakefast_three ?",
+  brakefast_Situation_three.bread||
+  brakefast_Situation_three.cheese||
+// i must put this\. too cuz even i have true i got' ya both true Not angry and BellyAche
+  brakefast_Situation_three.Peanut_butter 
+  &&
+  brakefast_Situation_three.Peanut_butter
+)
+
+console.log("Will i gotta angry at the brakefast_two ? ", !brakefast_Situation_two.Peanut_butter)
+
+console.log("Can i make a hamburger at the brakefast_one ?" , 
+brakefast_Situation_one.bread && brakefast_Situation_one.cheese)
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+
+
+
+console.log("Operator conditional Ternary ");
+
+let Bread = true;
+let Cheese = false;
+
+const BreakFast = Bread && Cheese ? `Full belly`: `Not full belly`;
+console.log(BreakFast)
+
+const BreakFasst = Bread || Cheese ? `Full belly`: `Not full belly`;
+console.log(BreakFasst)
+
+console.log("Can dive just if you are more than or equal 18 years")
+let age = 17;
+const CanDrive = age >= 18 ? `You can drive` : `You  cannot drive`;
+console.log(CanDrive)
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+
+console.log("Concatenate strings\n used + and   var += 'new value' ")
+let s = "s";
+console.log (`alpha` + "bet" + `${s} and`)
+s+= " updated";
+console.log("Atualizando a string s ->" , s)
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
+
+console.log("Special pre-requisites ---> Operator conditional Ternary \n TRULY FALSY");
+console.log("Situations  -Conditionals -Loops")
+console.log(`If the first elemente TERNARY isn't a BOOLEAN they will\n Automaticly become 
+True¹ or False² `)
+console.log('Situations ex¹\n   0\n   -0\n    ""\n    null\n    Undefined\n   NaN\n----------------')
+console.log( `0   `, 0 ? `Automaticly True`:`Automaticly false` )
+console.log( `-0    `, -0 ?         ``     :`Automaticly false` )
+console.log( `null   `, null ?       ``     :`Automaticly false` )
+let p ;
+console.log( `undefined   `, p ?       ``     :`Automaticly false` )
+let nan = 23*"a";
+console.log( `NaN   `, nan ?       ``     :`Automaticly false` )
+console.log("|")
+console.log('Situations ex²\n   true\n   -0\n    ""\n    null\n    Undefined\n    NaN\n----------------`')
+console.log( `true    `, true ? `Automaticly True`:`Automaticly false` )
+console.log( `{ } obj vazio `, { } ? `Automaticly True`:`` )
+console.log( `[]    `, [] ? `Automaticly True`:`` )
+console.log( `1   `, 1 ? `Automaticly True`:`` )
+console.log( `3.23    `, 3.23 ? `Automaticly True`:`` )
+console.log( `"0"   `, "0" ? `Automaticly True`:`` )
+console.log( `"false"   `, "false" ? `Automaticly True`:`` )
+console.log(`Infinity   `, Infinity ? `Àutomaticly true` : ``)
+console.log(`-Infinity    `, -Infinity ? `Àutomaticly true` : ``)
+
+
+
+/*
+//Expressões e operadores
+//04:15   faltava 2'
+
+versão 1 so o frontend nome modulo e aulas paginas # scrolll 100%
+ideia de projeto colocar os capítulos feitos com marcação do tempo gastado
+
+
+tenho   QUE ASSISTIR 
+Operador condicional ternário
+04:26
+
+
+
+*/
+</script>
