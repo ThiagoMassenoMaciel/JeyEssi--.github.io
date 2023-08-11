@@ -35,3 +35,14 @@ Idea of project : Build a "app"  for choose at the breakfast for my friend and t
 ----------USING JUST BOOLEAN AND objects looks like the exercices that i made in line 250 at the file Example10.html
 BOTH USERS initiale have um list to choose the breakfast for your friend and what kind of alergic food it is 
 AFTER they estart to try to gues the response by other HUNGRY ? bellyache ?
+
+-------file Example 11
+Idea of project Using Basics of java script square perfect testing what block will execute   
+first scope after expetion if() or second ? it depends the expression returns valure from things Truthy or Falsy
+
+------file Example 11 
+------line 177, 140  switch doesn't returns console.log(calc)
+
+
+capitulo penultimo faltou
+aula do try catch e o resto de 10 minuto - mas também né li 5 paginas do livro de redes   SENTI MT SONO 

@@ -1,0 +1,232 @@
+<script>
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+    console.log("Control flow and Conditionals")
+    //Condicionais e controle de fluxo 
+    console.log("-----execute line per line of code and together some logic");
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+    
+    console.log("==============If==========else==========")
+    console.log(`
+    \nif ( here you must to put some expression to returns true or false) {\n
+            into this scope put the commands to be run if the expression returns true
+    \n} else { \n
+            And this scope put the code if the returns was false\n
+    }    \n------------------------------------------------------`)
+    console.log(`
+    \nif ( Expression to returns true or false) {\n
+            Execute , if its true
+    \n} else { \n
+            if its false , execute\n
+    }    \n------------------------------------------------------`)
+
+    console.log("Idea to project :::I 'm not good and so i decide to check my temperature")
+    console.log(" if your temperature are high must be >= 37 ° Celsius")
+
+    temperature1 = 25;
+    //  not use else
+    if (temperature1 >= 37){
+        console.log(temperature1 , ` its high - you're not health`)
+    }
+    // use else
+    if (temperature1 >= 37){
+        console.log(temperature1 , ` its high - you're not health`)
+    }else{
+        console.log(temperature1 , ` its low - you're health`)
+    }
+    // use two else
+    if (temperature1 >= 37){
+        console.log(temperature1 , ` its high - you're not health`)
+    }else if (temperature1 >= 35){
+        console.log(temperature1 , ` its moderate - you're not so health, but also early to say sick`)
+    }else{
+        console.log(temperature1 , ` its low - you're health`)
+    }
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+    // use two else and variable(SEMÂNTIC) in order to be expressions 
+    console.log("use two else and variable(SEMÂNTIC) in order to be expressions ")
+    let HIGHtemperature = temperature1 >= 37;
+    let MEDIUMtemperature = temperature1 >= 35;
+    let LOWtemperature = temperature1 < 35;
+
+    
+    if (HIGHtemperature){
+        console.log(temperature1 , ` its high - you're not health`)
+    }else if (MEDIUMtemperature){
+        console.log(temperature1 , ` its moderate - you're not so health, but also early to say sick`)
+    }else if(LOWtemperature){
+        console.log(temperature1 , ` its low - you're health`)
+    }
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+
+    console.log("DELETE unnacessary code")
+    let temperature2 = 4;
+    let HIGHtemperature2 = temperature2 >= 37;
+    let MEDIUMtemperature2 = temperature2 >= 35;
+    //let LOWtemperature2 = temperature2 < 35;
+
+    
+    if (HIGHtemperature2){
+        console.log(temperature2 , ` its high - you're not health`)
+    }else if (MEDIUMtemperature2){
+        console.log(temperature2 , ` its moderate - you're not so health, but also early to say sick`)
+    }else /*if(LOWtemperature2)**/{
+        console.log(temperature2 , ` its low - you're health`)
+    }
+
+    console.log("\nDetails")
+
+    if ({}){
+            console.log(`If the expression was true (things truthy) always will execute this first part`)
+    }else{
+            console.log(`If the expression was false(things Falsy) always will execute this second part`)
+    }
+
+    console.log("\nDetails  plus    even the first part(expression) was equal de commands on the second parte(expression) \nWill run the first")
+    let variable18 = 34;
+    let first_expression = variable18 > 4 
+    let second_expression = variable18 > 3
+
+    if (first_expression){
+        console.log(`If the expression was the same (things truthy) always will execute this first part`)
+    }else if(second_expression){
+        console.log(`If the expression was the same (things truthy) always will never execute this second part at first moment`)
+    }
+
+/*pq este não funcnionou ? Cuz you put one else one IF (FALSE) this doens permitiu exist something that wasnt true appers
+
+    const result = function( Avar ){
+        if (Avar){
+            return `If the expression was true (things truthy) always will execute this first part`
+        }else if (false){
+            return `If the expression was false(things Falsy) always will execute this second part`
+        }
+
+    }
+
+    result(false)
+*/
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+    console.log("Use switch in order to use a lots of else if \n and use default in order to use last just else{ } block ")
+    console.log("--->")
+    console.log("use break in order to alow the flow execute next case after the result from expression")
+
+    console.log("\n\n if none of those cases was the result , executes the default")
+
+    console.log("use this concepts to create the calculator on javaSCRIPT")
+
+    console.log("-------------calc-------------")
+    console.log("----Exponencial **\n----Reminder %\n----add +\n----Sub - \n----Div  /\n----Multi *\n-------------------------------")
+
+    function calc(numberOne, sinal , numberTwo){
+        let result = 0;
+        switch(sinal){
+            case "+":
+                result = numberOne+numberTwo;
+            break;
+        
+            case "-":
+                result = numberOne-numberTwo;
+            break;
+    
+            case "/":
+                result = numberOne/numberTwo;
+            break;
+    
+            case "*":
+                result = numberOne*numberTwo;
+            break;
+
+            case "%":
+                result = numberOne%numberTwo;
+            break;
+    
+            case "**":
+                result = numberOne**numberTwo;
+            break;
+
+            default: 
+                result = "You typed invalid sinal ";
+            break;
+        }
+        return result
+
+    }
+    
+    console.log(`Testing the calc calc(23,"%",13)`, calc(23,"%",13))
+
+    console.log("-------------calc without break---------")
+
+    console.log("what happens here is because ---> all the cases \ndidn't have break and so - the variabel result was update with \nnew calc very moment execute next line until got to the \nDefault value")
+    console.log("It wil jus display the calc at these especific case that have break point")
+    console.log("-------------calc without break---------")
+
+    console.log(`Testing the calc calc(23,"%",13)`, calc1(23,"+",13))
+    
+    function calc1(numberOne, sinal , numberTwo){
+        let result = 0 ;
+        switch(sinal){
+            case "+":
+                result = numberOne+numberTwo;
+            case "-":
+                result = numberOne-numberTwo;
+            case "/":
+                result = numberOne/numberTwo;
+            case "*":
+                result = numberOne*numberTwo;
+            case "%":
+                result = numberOne%numberTwo;
+            case "**":
+                result = numberOne**numberTwo;
+            default:
+                result = "  typed invalid sinal ";           
+        }
+        return result;
+    }
+
+    console.log(`Testing the calc calc(3,"%",1)`, calc1(3,"%",1))
+    console.log(`""`)
+    console.log('""')
+    console.log("''")
+    console.log("``")
+
+/*
+try - tentar executar um trecho de código 
+throw - vamos lançar na tela se caso der erro 
+catch - pegar esse erro na aplicação
+*/
+
+    console.log("Using thow for to make display one Exception about that especific part of software and not stop the rest of flow into you code")
+    console.log("Use throw new Error on scope to error and out of that scope execute intot the try catch ")
+
+    function MyName( name = " " ){
+        if (name === " "){
+            throw new Error("You didn't assignment for call this function") //  `Name is required`
+        }
+        console.log("Display After this function");
+
+    }
+
+    
+
+
+</script>

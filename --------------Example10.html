@@ -353,9 +353,57 @@ console.log( `1   `, 1 ? `Automaticly True`:`` )
 console.log( `3.23    `, 3.23 ? `Automaticly True`:`` )
 console.log( `"0"   `, "0" ? `Automaticly True`:`` )
 console.log( `"false"   `, "false" ? `Automaticly True`:`` )
-console.log(`Infinity   `, Infinity ? `Àutomaticly true` : ``)
-console.log(`-Infinity    `, -Infinity ? `Àutomaticly true` : ``)
+console.log(`Infinity   `, Infinity ? `Automaticly true` : ``)
+console.log(`-Infinity    `, -Infinity ? `Automaticly true` : ``)
+console.log("|")
+console.log("|")
+console.log("|")
+console.log("|")
 
+/*
+
+// De cima para baixo, do mais importante ao menos importante.
+
+* grouping                      ( )
+* negação e incremento          ! ++ --
+* multiplicação e divisão       * /
+* adição e subtração            + -
+* relacional                    < <= > >=
+* igualdade                     == != === !==
+* AND                           && 
+* OR                            ||
+* condicional                   ?:
+* assignment (atribuição)       = += -= *= %= 
+
+
+
+*/
+
+let bb = 10 , flag = "s";
+console.log("Operators precedence |- priority order ")
+console.log(`(   (--bb * 2 -1) > (10 === bb && 10 < bb) ? flag =" y" : flag = "n" ) > (bb +=bb) } 
+===
+ ${( ( --bb * 2 -1) > (  10 === bb && 10 < bb )? flag =" y" : flag = "n") >( bb +=bb)} ${flag}`)
+console.log(`Grouping  ()                       | 1º  go to the first (parentesses)`)
+bb = 10;
+console.log("Incremment and negator ! ++ --     |2º  bb-1 = ", --bb)
+console.log("Multiplication and Division *  /   |3º  bb * 2  =", bb*2)
+console.log("Addition Subtraction  + -          |4º  bb - 1  =",bb * 2 -1)
+console.log("Relational  <  <=  >  >= \nthis returns true ? 1 : 0          | 5º (17) > (other member)" ,(bb * 2 -1) > (10 === bb && 10 < bb) )
+console.log("      relational again                  10 < bb " , 10 < bb)
+console.log("Iguality   ==  !=  ===  !==        |6º  10 === bb ",10 === bb )
+
+console.log("AND   &&                           |7º  ( 10 === bb ) && (10 < bb )", 10 === bb && 10 < bb)
+console.log("OR    ||")
+console.log("Conditional  ?:                    |8º  (--bb * 2 -1) > (10 === bb && 10 < bb) ? flag ='y' : flag = 'n'  \n--->", (bb * 2 -1) > (10 === bb && 10 < bb) ? flag =" y" : flag = "n")
+console.log("Assignment (atribuição)  \n=  +=  -=  *=  %=                  |9º ( bb +=bb)  == ",  bb +=bb)
+console.log('                                   | Last ( y ) > (bb +=bb) = ', (   (bb * 2 -1) > (10 === bb && 10 < bb) ? flag =" y" : flag = "n" ) > (bb +=bb))
+
+console.log('#\n#\n#details\n true == 1 ', true == 1 ,' --same value but different type\n true === 1', true === 1, '\n "1" == 1 == true ',"1" == 1 == true)
+console.log(`|     ( 3  >  2 ) > 2 ${( 3  >  2 ) > 2}  is =    3 > 2 > 4  ${3 > 2 > 4} `)
+console.log(`|     ( ${3 >2}) > 2                             (${3> 2}) > 4  `)
+console.log(`|     (   1 ) > 2  ${1>2}                           1  > 4 ${ 1>4}`)
+console.log("|")
 
 
 /*
